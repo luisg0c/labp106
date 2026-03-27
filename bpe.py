@@ -16,7 +16,7 @@ def get_stats(vocab):
         syms = word.split()
         for i in range(len(syms) - 1):
             p = (syms[i], syms[i + 1])
-            pairs[p] = pairs.get(p, 0) + 1
+            pairs[p] = pairs.get(p, 0) + freq
     return pairs
 
 

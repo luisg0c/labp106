@@ -31,10 +31,6 @@ def merge_vocab(pair, v_in):
 
 
 if __name__ == "__main__":
-    print("vocab inicial:")
-    for w, f in vocab.items():
-        print(f"  {w}: {f}")
-    print()
     for i in range(N_MERGES):
         stats = get_stats(vocab)
         best = max(stats, key=stats.get)

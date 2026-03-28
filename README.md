@@ -8,6 +8,10 @@ O BPE funde pares de simbolos mais frequentes iterativamente. Apos 5 rodadas no 
 
     pip install transformers
 
+## WordPiece
+
+Tokens com `##` na frente (tipo `##mente`, `##etros`) sao pedacos que continuam a palavra anterior, nao palavras novas. O tokenizer WordPiece quebra palavras raras ou compridas em sub-palavras que ele conhece, entao o modelo nunca trava com vocabulario desconhecido. O BERTimbau (treinado so em portugues) quebra bem menos que o multilingual porque tem mais palavras portuguesas inteiras no vocabulario, por exemplo `parâmetros` fica inteiro no BERTimbau mas vira `par ##âm ##etros` no multilingual.
+
 ## Como rodar
 
     python bpe.py

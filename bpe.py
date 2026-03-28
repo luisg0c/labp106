@@ -38,7 +38,7 @@ if __name__ == "__main__":
     for i in range(N_MERGES):
         stats = get_stats(vocab)
         best = max(stats, key=stats.get)
-        print(f"merge {i + 1}: {best} (freq {stats[best]})")
+        print(f"merge {i + 1}: {best} -> {''.join(best)}  freq={stats[best]}")
         vocab = merge_vocab(best, vocab)
         for w, f in vocab.items():
             print(f"  {w}: {f}")

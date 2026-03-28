@@ -17,3 +17,10 @@ Tokens com `##` na frente (tipo `##mente`, `##etros`) sao pedacos que continuam 
     python bpe.py
     python wordpiece.py
     python test_bpe.py
+
+## Uso de IA
+
+Ferramenta usada: Claude Sonnet 4.6
+
+- O padrao regex com lookahead/lookbehind no `merge_vocab` foi gerado com auxilio de IA e revisado manualmente
+- Sugestao do tokenizer `neuralmind/bert-base-portuguese-cased` (BERTimbau) pra comparar com o multilingual
